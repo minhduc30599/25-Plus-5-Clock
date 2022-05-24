@@ -4,6 +4,7 @@ import Title from "./Title";
 import Feature from "./Feature";
 import Clock from "./Clock";
 import Author from "./Author";
+import ClockControl from "./ClockControl";
 
 class App extends React.Component {
     constructor(props) {
@@ -16,6 +17,7 @@ class App extends React.Component {
                 <Title />
                 <Feature />
                 <Clock />
+                <ClockControl />
                 <Author />
             </div>
         );
