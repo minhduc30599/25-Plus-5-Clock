@@ -12,7 +12,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="container mt-5">
+            <div className="container cont">
                 <Title />
                 <Feature />
                 <Clock />
