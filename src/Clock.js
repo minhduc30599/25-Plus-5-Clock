@@ -7,10 +7,12 @@ class Clock extends React.Component {
     }
 
     render() {
+        const style = this.props.timeStyle < 61 ? {color: "red"} : {color: "white"};
+        
         return (
-            <div className="clock mt-5 p-5 text-center text-light border border-dark border-5 rounded-pill">
-                <div className="session">Session</div>
-                <div className="fw-bolder time">25:00</div>
+            <div className="clock mt-5 p-5 text-center border border-dark border-5 rounded-pill" style={style}>
+                <div className="session">{this.props.timeType}</div>
+                <div className="fw-bolder time">{this.props.time}</div>
             </div>
         );
     }
